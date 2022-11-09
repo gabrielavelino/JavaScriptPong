@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>JavaScript</title>
+    </head>
+
+    <header>
+        <h1 class="titulo">Jogo adivinha!</h1>
+    </header>
+    <body>
+        <input type="text" placeholder="Ex: Digite um número" class="input-padrao">
+        <button class="enviar">Tentar sorte</button>
+        <script>
+            console.log("Ola mundo");
+
+            function sorteio(){
+                return Math.round(Math.random() * 10);
+            }
+
+            function sorteiaNumeros(quantidade){
+                var segredos = [];
+
+                var num = 1;
+
+                while(num <= quantidade){
+                    var numAleatorio = sorteio();
+                    var achou = false;
+                    console.log(segredos.length);
+                    for(var i = 0; i < segredos.length; i++){
+                        if(segredos[i] == numAleatorio){
+                            achou = true;
+                            break;
+                            console.log("entrou aqui!!!!")
+                        } else {
+                            console.log("nao é repetido");
+                        }
+                    }
+                    if(achou == false){
+                        console.log("entrou aqui ufa");
+                        segredos.push(numAleatorio);
+                        num++;
+                    } 
+                }
+
+                return segredos;
+            }
+
+            var segredos = sorteiaNumeros(5);
+
+            function verifica(){
+                var achou = false;
+                
+                for(var i = 0; i < segredos.length; i++){
+                    if(input.value == segredos[i]){
+                        alert("Você acertou!!");
+                        achou = true;
+                        break;
+                    }
+                }
+                if(achou == false ){
+                        alert("Voce perdeu!!!")
+                    }
+            }
+
+            var input = document.querySelector("input");
+            input.focus();
+
+            var button = document.querySelector("button");
+
+            button.onclick = verifica;
+
+
+        </script>
+        
+    </body>
+</html>
