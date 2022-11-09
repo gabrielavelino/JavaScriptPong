@@ -30,9 +30,9 @@ nav li {
 }
 
 .imagemTopo {
-	width: 5%;
+	width: 8%;
 	position: relative;
-	right: 90px;
+	right: 100px;
 	margin-top: 25px;
 }
 
@@ -40,16 +40,24 @@ header h1{
 	font-size: 40px;
 	display:inline;
 	vertical-align:	middle;
+	color: black;
 }
 
 .href {
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 	margin-top: 10px;
+	transition: 0.5s all;
     
+}
+
+nav a:hover {
+    color: white;
+    text-decoration:double;
+	font-size: 20px;
 }
 
 header h2{
