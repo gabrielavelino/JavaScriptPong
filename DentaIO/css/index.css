@@ -40,7 +40,7 @@ header h1{
 	font-size: 40px;
 	display:inline;
 	vertical-align:	middle;
-	color: black;
+	color: white;
 }
 
 .href {
@@ -133,9 +133,10 @@ label{
 }
 
 .grupo{
-	width: 32%;
+	width: 20%;
 	display: inline-block;
 	padding: 10px 0px;
+	margin-right: 40px;
 }
 
 button{
@@ -173,4 +174,79 @@ button[disabled=disabled], button:disabled {
 
 .campo-invalido{
 	border: 1px solid red;
+}
+
+.tabelasCertas {
+	background-color: lightblue;
+}
+
+
+.tituloForms{
+	margin-left: 300px;
+	margin-top: 40px;
+	font-size: 2.5em;
+	width: 60%;
+}
+
+.tituloForms h3{
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+form {
+    margin: 40px 0;
+}
+
+.formulario {
+	margin-left: 350px;
+}
+
+ form label, form p {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.nome {
+	width: 100%;
+ }
+
+.input-padrao {
+    display: inline;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 110%;
+}
+
+.input-principal {
+	display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 70%;
+}
+
+.enviar {
+    margin-top: 20px;
+    padding: 15px;
+    background: lightblue;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer; 
+	border: 0;
+	border-bottom: 3px solid;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+}
+
+.enviar:hover {
+    background: darkcyan;
+    transform: scale(1.2);
+
 }
