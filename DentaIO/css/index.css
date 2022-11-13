@@ -180,6 +180,9 @@ button[disabled=disabled], button:disabled {
 	background-color: lightblue;
 }
 
+.tabelasErradas {
+	background-color: lightcoral;
+}
 
 .tituloForms{
 	margin-left: 300px;
@@ -250,3 +253,4 @@ form {
     transform: scale(1.2);
 
 }
+

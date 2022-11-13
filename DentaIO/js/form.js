@@ -1,5 +1,4 @@
 function adicionaPaciente(event){
-    alert("Paciente adicionado");
     event.preventDefault();
 
     // Pega os valores do formulario e coloca em uma variável
@@ -13,8 +12,14 @@ function adicionaPaciente(event){
 
     var pacienteTr = montaTr(paciente); 
 
-    // console.log(pacienteTr);
+    if(!validaPaciente(paciente)){
+        console.log("Paciente invalido!");
+        alert("Peso invalido do paciente");
+        return;
+    }
 
+    // console.log(pacienteTr);
+    alert("Paciente adicionado");
     var tabela = document.querySelector("#tabela-pacientes");
     tabela.appendChild(pacienteTr);
     form.reset();
@@ -68,6 +73,15 @@ function montaTd(dado,classe){
     td.classList.add(classe);
 
     return td;
+
+}
+
+function validaPaciente(paciente){
+    if(validaPeso(paciente.peso)){
+        return true;
+    } else {
+        return false;
+    }
 
 }
 
