@@ -10,11 +10,13 @@ function adicionaPaciente(event){
 
     var paciente = dadosPaciente(form);
 
-    var pacienteTr = montaTr(paciente); 
+    var pacienteTr = montaTr(paciente);
 
-    if(!validaPaciente(paciente)){
+    var erros = validaPaciente(paciente);
+
+    if(erros.length > 0){
         console.log("Paciente invalido!");
-        alert("Peso invalido do paciente");
+        alert("Não foi possível cadastrar paciente, peso ou altura inválida!");
         return;
     }
 
@@ -77,12 +79,24 @@ function montaTd(dado,classe){
 }
 
 function validaPaciente(paciente){
+    
+    var erros = [];
+    
     if(validaPeso(paciente.peso)){
-        return true;
+        console.log("entrou aqui peso");
     } else {
-        return false;
+        console.log("entrou aqui peso!!!");
+        erros.push("Peso invalido");
     }
 
+    if(validaAltura(paciente.altura)){
+        console.log("entrou aqui");
+    } else {
+        console.log("entrou aqui!!!");
+        erros.push("Altura inválida!");
+    }
+    // console.log(erros);
+    return erros;
 }
 
 var adicionarPaciente = document.querySelector(".enviar");

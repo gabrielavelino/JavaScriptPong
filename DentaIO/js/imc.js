@@ -60,8 +60,10 @@ for(var i = 0; i < pacientes.length; i++){
 
 function validaAltura(altura){
     if(altura < 2.10 && altura > 0.0){
+        console.log("altura válida!!!");
         return true;
     } else {
+        console.log("altura inválida!!!");
         return false;
     }
 }
