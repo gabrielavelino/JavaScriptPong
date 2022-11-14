@@ -10,7 +10,7 @@ function adicionaPaciente(event){
 
     var paciente = dadosPaciente(form);
 
-    var pacienteTr = montaTr(paciente);
+    // var pacienteTr = montaTr(paciente);
 
     var erros = validaPaciente(paciente);
 
@@ -20,11 +20,18 @@ function adicionaPaciente(event){
         return;
     }
 
+    adicionaPacienteNaTabela(paciente);
     // console.log(pacienteTr);
     alert("Paciente adicionado");
+    // var tabela = document.querySelector("#tabela-pacientes");
+    // tabela.appendChild(pacienteTr);
+    form.reset();
+}
+
+function adicionaPacienteNaTabela(paciente){
+    var pacienteTr = montaTr(paciente);
     var tabela = document.querySelector("#tabela-pacientes");
     tabela.appendChild(pacienteTr);
-    form.reset();
 }
 
 function dadosPaciente(form){
