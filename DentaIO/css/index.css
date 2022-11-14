@@ -222,6 +222,13 @@ form {
     width: 110%;
 }
 
+.filtroBusca {
+	display: inline;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 30%;
+}
+
 .input-principal {
 	display: block;
     margin: 0 0 20px;
@@ -252,5 +259,10 @@ form {
     background: darkcyan;
     transform: scale(1.2);
 
+}
+
+.fadeout {
+	opacity: 0;
+	transition: 0.75s;
 }
 
