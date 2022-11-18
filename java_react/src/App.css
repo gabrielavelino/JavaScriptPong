@@ -3,17 +3,20 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	width: 20%;
+	position: relative;
+	right: 550px;
+	margin-top: 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +25,78 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+header{
+	background-color: #282c34;
+	height: 150px;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+nav {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+}
+
+nav ul {
+	margin-top: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+
+}
+
+header h1{
+	font-size: 40px;
+	display:inline;
+	vertical-align:	middle;
+  text-align: center;
+	color: white;
+}
+
+.href {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.5s all;
+  
+}
+
+nav a:hover {
+  color: #61dafb;
+  text-decoration:double;
+  font-size: 20px;
 }
