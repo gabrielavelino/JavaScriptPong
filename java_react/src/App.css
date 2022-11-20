@@ -1,14 +1,22 @@
+
+/* body{
+  background-color: rebeccapurple;
+} */
+
 .App {
+  width: 100vw;
+  height: 100vh;
   text-align: center;
+  background-color: rebeccapurple;
 }
 
-.App-logo {
+/* .App-logo {
 	width: 20%;
 	position: relative;
 	right: 550px;
 	margin-top: 10px;
 
-}
+} */
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -99,4 +107,22 @@ nav a:hover {
   color: #61dafb;
   text-decoration:double;
   font-size: 20px;
+}
+
+.icones {
+  position: relative;
+  left: 900px;
+  bottom: 100px;
+  align-items: center;
+  width: 80px;
+}
+
+.icon{
+  width: 30px;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+.icon:hover {
+  width: 60px;
 }
