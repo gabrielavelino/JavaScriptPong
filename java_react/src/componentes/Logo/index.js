@@ -1,10 +1,17 @@
 import logo from '../../logo.svg'
 import React from 'react'
-import './estilo.css'
+import styled from 'styled-components'
+
+const LogoApp = styled.img`
+    width: 20%;
+    position: relative;
+    right: 550px;
+    margin-top: 10px;
+`
 
 function Logo(){
     return (
-        <img src={logo} className="App-logo" alt='logo'></img>
+        <LogoApp src={logo} alt='logo'></LogoApp>
     )
 }
 

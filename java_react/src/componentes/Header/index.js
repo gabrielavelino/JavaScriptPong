@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from '../Logo'
-import OpcoesHeader from '../OpcoesHeader';
+import OpcoesHeader from '../OpcoesHeader'
 import IconeHeader from '../IconeHeader'
 
 
@@ -10,7 +10,7 @@ function Header (){
           <div className="container">
             {/* <img src={logo} classNameName="App-logo" alt='logo'></img> */}
             <Logo/>
-            <div className="caixa">
+            <div>
               <nav>
                 <h1 className="titulo">Denta.io - Sistema para controle de clínicas</h1>
                 <OpcoesHeader></OpcoesHeader>
