@@ -10,12 +10,20 @@ const Input = styled.input`
     margin-bottom: 30px;
     
 `
+const Titulo = styled.h2`
+    color: black;
+    font-size: 30px;
+
+`
 
 const PesquisaContainer = styled.section`
     background-color: white;
     text-align: center;
-    padding: 20px 0;
-    width: 100%;
+    padding: 10px;
+    width: 30%;
+    border-radius:40px;
+    margin-left: 500px;
+    margin-top: 50px;
 `
 
 function Pesquisa(){
@@ -29,10 +37,11 @@ function Pesquisa(){
 
     return(
         <PesquisaContainer>
-            <h2>Já sabe por onde começar?</h2>
+            <Titulo>Já sabe por onde começar?</Titulo>
             <h3>Encontre o seu paciente.</h3>
-            <Input placeholder="Digite o paciente" onBlur={evento => fazPesquisa(evento)}>
+            <Input placeholder="Digite o paciente" onChange={evento => fazPesquisa(evento)}>
             </Input>
+            
             {pessoaPesquisada.map(pessoa => (
                 <p>{pessoa.nome}</p>
                 ))}
