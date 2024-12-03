@@ -1,1 +1,3 @@
 # JavaScriptPong
+
+Repositório de aprendizado
